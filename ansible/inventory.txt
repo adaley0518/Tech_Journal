@@ -1,0 +1,4 @@
+[cockpit]
+ansible01-amber
+[webmin]
+ansible02-amber

@@ -1,0 +1,11 @@
+- hosts: cockpit
+  become: true
+  roles:
+          - oasis_roles.cockpit
+          - oasis_roles.firewalld
+
+  vars:
+          firewalld_zone: public
+          firewalld_ports_open:
+                  - proto: tcp
+                    port: 9090
